@@ -16,3 +16,10 @@ model User {
   email String  @unique
   name  String?
 }
+
+model Comments {
+  id Int @id @default(autoincrement())
+  author String
+  body String
+  post_slug String
+}
